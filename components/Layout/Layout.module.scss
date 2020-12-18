@@ -1,0 +1,27 @@
+.layout {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-gap: 2vh;
+    grid-template-areas: "header header header header"
+        "content content content content";
+}
+
+.header {
+    grid-area: header;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100vw;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    grid-area: content;
+    padding: 0 2vw;
+}
